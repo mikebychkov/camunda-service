@@ -26,10 +26,22 @@
     <bpmn:sequenceFlow id="Flow_0a63mvr" sourceRef="Activity_1i5et9m" targetRef="EndEvent_0x6ir2l" />
     <bpmn:sequenceFlow id="Flow_1lcp32d" sourceRef="Activity_168nrfh" targetRef="Event_15aec6m" />
     <bpmn:userTask id="Activity_1i5et9m" name="WIN">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="myArmySize" label="myArmySize" type="long" />
+          <camunda:formField id="enemyArmySize" label="enemyArmySize" type="long" />
+        </camunda:formData>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_0uuw0yl</bpmn:incoming>
       <bpmn:outgoing>Flow_0a63mvr</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="Activity_168nrfh" name="LOSE">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="myArmySize" label="myArmySize" type="long" />
+          <camunda:formField id="enemyArmySize" label="enemyArmySize" type="long" />
+        </camunda:formData>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_0wbknyf</bpmn:incoming>
       <bpmn:outgoing>Flow_1lcp32d</bpmn:outgoing>
     </bpmn:userTask>
@@ -74,6 +86,8 @@
       <bpmn:extensionElements>
         <camunda:formData>
           <camunda:formField id="tryAgain" label="Try again" type="boolean" defaultValue="false" />
+          <camunda:formField id="myArmySize" label="myArmySize" type="long" />
+          <camunda:formField id="enemyArmySize" label="enemyArmySize" type="long" />
         </camunda:formData>
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_1q33g5m</bpmn:incoming>
