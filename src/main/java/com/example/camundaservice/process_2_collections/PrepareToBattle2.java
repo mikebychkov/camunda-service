@@ -1,4 +1,4 @@
-package com.example.camundaservice.process_collections;
+package com.example.camundaservice.process_2_collections;
 
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
 
 @Component
 public class PrepareToBattle2 implements JavaDelegate {

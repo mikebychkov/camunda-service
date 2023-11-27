@@ -1,7 +1,7 @@
-package com.example.camundaservice.process_serialization;
+package com.example.camundaservice.process_3_serialization;
 
-import com.example.camundaservice.process_serialization.domain.Warrior;
-import com.example.camundaservice.process_serialization.service.WarriorService;
+import com.example.camundaservice.process_3_serialization.domain.Warrior;
+import com.example.camundaservice.process_3_serialization.service.WarriorService;
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

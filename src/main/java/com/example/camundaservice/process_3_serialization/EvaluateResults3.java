@@ -1,4 +1,4 @@
-package com.example.camundaservice.process_serialization;
+package com.example.camundaservice.process_3_serialization;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

@@ -1,6 +1,6 @@
 package com.example.camundaservice.test;
 
-import com.example.camundaservice.process_serialization.domain.Warrior;
+import com.example.camundaservice.process_3_serialization.domain.Warrior;
 
 import java.io.IOException;
 import java.nio.file.Files;

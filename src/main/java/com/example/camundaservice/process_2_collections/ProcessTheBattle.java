@@ -1,6 +1,5 @@
-package com.example.camundaservice.process_serialization;
+package com.example.camundaservice.process_2_collections;
 
-import com.example.camundaservice.process_serialization.domain.Warrior;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
@@ -9,22 +8,22 @@ import java.util.LinkedList;
 import java.util.Random;
 
 @Component
-public class ProcessTheBattle3 implements JavaDelegate {
+public class ProcessTheBattle implements JavaDelegate {
 
     private final Random rnd = new Random();
 
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
 
-        LinkedList<Warrior> myArmy = (LinkedList<Warrior>) delegateExecution.getVariable("myArmy");
-        LinkedList<Warrior> enemyArmy = (LinkedList<Warrior>) delegateExecution.getVariable("enemyArmy");
+        LinkedList<Integer> myArmy = (LinkedList<Integer>) delegateExecution.getVariable("myArmy");
+        LinkedList<Integer> enemyArmy = (LinkedList<Integer>) delegateExecution.getVariable("enemyArmy");
 
         if (rnd.nextBoolean()) {
-            Warrior w = enemyArmy.pollLast();
-            System.out.printf("ENEMY WARRIOR KILLED: %s", w);
+            System.out.print("ENEMY WARRIOR KILLED");
+            enemyArmy.pollLast();
         } else {
-            Warrior w = myArmy.pollLast();
-            System.out.printf("MY WARRIOR KILLED: %s", w);
+            System.out.print("MY WARRIOR KILLED");
+            myArmy.pollLast();
         }
 
         System.out.printf(" (my: %s, enemy: %s)%n", myArmy.size(), enemyArmy.size());

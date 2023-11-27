@@ -1,4 +1,4 @@
-package com.example.camundaservice.process_serialization.domain;
+package com.example.camundaservice.process_3_serialization.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

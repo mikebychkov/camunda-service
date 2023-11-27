@@ -1,4 +1,4 @@
-package com.example.camundaservice.process_collections;
+package com.example.camundaservice.process_2_collections;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

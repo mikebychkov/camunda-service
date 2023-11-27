@@ -1,4 +1,4 @@
-package com.example.camundaservice.process;
+package com.example.camundaservice.process_1;
 
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;

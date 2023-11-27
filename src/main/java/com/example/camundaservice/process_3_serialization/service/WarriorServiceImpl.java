@@ -1,6 +1,6 @@
-package com.example.camundaservice.process_serialization.service;
+package com.example.camundaservice.process_3_serialization.service;
 
-import com.example.camundaservice.process_serialization.domain.Warrior;
+import com.example.camundaservice.process_3_serialization.domain.Warrior;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
