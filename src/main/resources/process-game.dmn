@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="scisors-paper-rock-decision" name="Scisors-paper-rock-decision" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.16.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.3.0">
+  <decision id="scisors-paper-rock-decision-table" name="Scisors-paper-rock-decision">
+    <decisionTable id="DecisionTable_08b7ls4">
+      <input id="Input_1" label="bet1">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>bet1</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0d8l108" label="bet2">
+        <inputExpression id="LiteralExpression_137reqp" typeRef="string">
+          <text>bet2</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="winner" name="winner" typeRef="string" />
+      <rule id="DecisionRule_0qiwcfi">
+        <inputEntry id="UnaryTests_0jxpoda">
+          <text>"paper"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01nu8s0">
+          <text>"rock"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08gd5o1">
+          <text>"player1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1n42ofs">
+        <inputEntry id="UnaryTests_0otcurh">
+          <text>"rock"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lvpg9j">
+          <text>"paper"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bel8el">
+          <text>"player2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_177qftm">
+        <inputEntry id="UnaryTests_0wrcj3c">
+          <text>"paper"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q4ym1b">
+          <text>"scisors"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1k2ilry">
+          <text>"player2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19pc1rm">
+        <inputEntry id="UnaryTests_18axq2c">
+          <text>"scisors"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0iivr1z">
+          <text>"paper"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w1zvom">
+          <text>"player1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ygux7r">
+        <inputEntry id="UnaryTests_0egoqpo">
+          <text>"scisors"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0x3x9rr">
+          <text>"rock"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1py4ziy">
+          <text>"player2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hcmibd">
+        <inputEntry id="UnaryTests_1e9v2ar">
+          <text>"rock"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ivysyd">
+          <text>"scisors"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fcupt7">
+          <text>"player1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nkwf9x">
+        <inputEntry id="UnaryTests_1nhxmuy">
+          <text>"paper"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1exe7sb">
+          <text>"paper"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12jq3ci">
+          <text>"none"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15xm7h5">
+        <inputEntry id="UnaryTests_0lx6ck1">
+          <text>"rock"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ikofjs">
+          <text>"rock"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1l1zgrd">
+          <text>"none"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03d1aiq">
+        <inputEntry id="UnaryTests_06y2f44">
+          <text>"scisors"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0unih03">
+          <text>"scisors"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fn9r5d">
+          <text>"none"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="scisors-paper-rock-decision-table">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

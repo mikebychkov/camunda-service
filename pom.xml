@@ -32,6 +32,9 @@
 	</dependencyManagement>
 
 	<dependencies>
+
+		<!--SPRING-BOOT-->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -42,6 +45,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--CAMUNDA-->
 
 		<dependency>
 			<groupId>org.camunda.bpm.springboot</groupId>
@@ -68,11 +73,44 @@
 			<artifactId>camunda-spin-dataformat-json-jackson</artifactId>
 		</dependency>
 
+		<!--CAMUNDA-CONNECTORS-->
+
+		<dependency>
+			<groupId>org.camunda.connect</groupId>
+			<artifactId>camunda-connect-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.camunda.connect</groupId>
+			<artifactId>camunda-connect-http-client</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.camunda.bpm</groupId>
+			<artifactId>camunda-engine-plugin-connect</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
+
+		<!--JS-ENGINE-TO-RUN-JS-SCRIPTS-IN-PROCESS-->
+
+		<dependency>
+			<groupId>org.graalvm.js</groupId>
+			<artifactId>js</artifactId>
+			<version>21.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.graalvm.js</groupId>
+			<artifactId>js-scriptengine</artifactId>
+			<version>21.1.0</version>
+		</dependency>
+
+		<!--DATABASE-->
 
 		<dependency>
 			<groupId>com.h2database</groupId>
